@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS imagenes;
+CREATE DATABASE imagenes CHARSET utf8mb4;
+USE imagenes;
+
+CREATE TABLE images (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    description VARCHAR(250) NOT NULL,
+    url VARCHAR(250) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO images (name, description, url) VALUES ('mascota de color negro y blanco', 'mascota dalmata', 'https://images.dog.ceo/breeds/dalmatian/cooper2.jpg');
